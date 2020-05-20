@@ -57,3 +57,28 @@ function mostrar_ocultar(valorMO) {
         document.getElementById(elementId="divMO").style.display= 'none';
     }
 }
+
+function calcularsuma() {
+    var num1, num2;
+    num1=Number(document.getElementById(elementName="sum_num1")[0].value);
+    num2=Number(document.getElementById(elementName="sum_num2")[0].value);
+    document.getElementById(elementName="sum_total")[0].value= num1 + Number(num2);
+}
+function calcular_resta() {
+    var num1, num2;
+    num1=Number(document.getElementById(elementName="res_num1")[0].value);
+    num2=Number(document.getElementById(elementName="res_num2")[0].value);
+    document.getElementById(elementName="res_total")[0].value= num1 - Number(num2);
+}
+function calcular_mult() {
+    var num1, num2;
+    num1=Number(document.getElementById(elementName="mul_num1")[0].value);
+    num2=Number(document.getElementById(elementName="mul_num2")[0].value);
+    document.getElementById(elementName="mul_total")[0].value= num1 * Number(num2);
+}
+function calcular_div() {
+    var num1, num2;
+    num1=Number(document.getElementById(elementName="div_num1")[0].value);
+    num2=Number(document.getElementById(elementName="div_num2")[0].value);
+    document.getElementById(elementName="div_total")[0].value= num1 / Number(num2);
+}
