@@ -72,26 +72,26 @@ function mostrar_ocultar(valorMO) {
 }
 
 function calcularsuma() {
-    var num1, num2;
-    num1=Number(document.getElementById(elementName="sum_num1")[0].value);
-    num2=Number(document.getElementById(elementName="sum_num2")[0].value);
-    document.getElementById(elementName="sum_total")[0].value= num1 + Number(num2);
+    var nums1, nusm2;
+    nums1=Number(document.getElementsByName(elementName="sum_num1")[0].value);
+    nums2=Number(document.getElementsByName(elementName="sum_num2")[0].value);
+    document.getElementsByName(elementName="sum_total")[0].innerHTML= nums1 + Number(nums2);
 }
 function calcular_resta() {
-    var num1, num2;
-    num1=Number(document.getElementById(elementName="res_num1")[0].value);
-    num2=Number(document.getElementById(elementName="res_num2")[0].value);
-    document.getElementById(elementName="res_total")[0].value= num1 - Number(num2);
+    var numr1, numr2;
+    numr1=Number(document.getElementsByName(elementName="res_num1")[0].value);
+    numr2=Number(document.getElementsByName(elementName="res_num2")[0].value);
+    document.getElementsByName(elementName="res_total")[0].innerHTML= numr1 - Number(numr2);
 }
 function calcular_mult() {
-    var num1, num2;
-    num1=Number(document.getElementById(elementName="mul_num1")[0].value);
-    num2=Number(document.getElementById(elementName="mul_num2")[0].value);
-    document.getElementById(elementName="mul_total")[0].value= num1 * Number(num2);
+    var numm1, numm2;
+    numm1=Number(document.getElementsByName(elementName="mul_num1")[0].value);
+    numm2=Number(document.getElementsByName(elementName="mul_num2")[0].value);
+    document.getElementsByName(elementName="mul_total")[0].innerHTML= numm1 * Number(numm2);
 }
 function calcular_div() {
-    var num1, num2;
-    num1=Number(document.getElementById(elementName="div_num1")[0].value);
-    num2=Number(document.getElementById(elementName="div_num2")[0].value);
-    document.getElementById(elementName="div_total")[0].value= num1 / Number(num2);
+    var numd1, numd2;
+    numd1=Number(document.getElementsByName(elementName="div_num1")[0].value);
+    numd2=Number(document.getElementsByName(elementName="div_num2")[0].value);
+    document.getElementsByName(elementName="div_total")[0].innerHTML= numd1 / Number(numd2);
 }
