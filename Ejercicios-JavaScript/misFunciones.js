@@ -95,3 +95,24 @@ function calcular_div() {
     numd2=Number(document.getElementsByName(elementName="div_num2")[0].value);
     document.getElementsByName(elementName="div_total")[0].innerHTML= numd1 / Number(numd2);
 }
+
+function CargarWeb()
+{
+    var cant,unidad,urlComp;
+
+    cant= document.getElementById(elementId="distancia").value;
+    unidad=document.getElementsByName(elementName="unidad")[0].value;
+
+    urlComp="segundaWeb.html#"+ cant + "#" + unidad;
+    window.open(urlComp);
+}
+
+function cargarResultado() {
+    var urlComp, cant, un;
+
+    urlComp= window.location.href.split(separador="/")[5];
+
+    cant =urlComp.split(separador="#")[1];
+    un= urlComp.split(separador="#")[2];
+    document.getElementById(elementId="dist").value= can + " " + un;
+}
