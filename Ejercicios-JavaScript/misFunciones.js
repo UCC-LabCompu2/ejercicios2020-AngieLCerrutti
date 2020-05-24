@@ -116,3 +116,19 @@ function cargarResultado() {
     un= urlComp.split(separador="#")[2];
     document.getElementById(elementId="dist").value= can + " " + un;
 }
+
+function dibujarCirCua(){
+    var canvas=document.getElementById(elementId="myCanvas");
+    var ctx= canvas.getContext("2d");
+    var xMax = canvas.width;
+    var yMax = canvas.height;
+    var margen= 5;
+    ctx.fillStyle = "#333899";
+    ctx.fillRect(x=0+margen,yMax-40-margen, W=40, h=40 );
+
+    ctx.arc(xMax/2, yMax/2, radius=20, startAngle=0, endangle=2*Math.PI);
+    ctx.stroke();
+    ctx.fillStyle = "#99617d";
+    ctx.fill();
+
+}
