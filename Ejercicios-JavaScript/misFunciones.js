@@ -130,5 +130,28 @@ function dibujarCirCua(){
     ctx.stroke();
     ctx.fillStyle = "#99617d";
     ctx.fill();
+}
 
+function dibujar() {
+    var canvas= document.getElementById(elementId="canvasAdibujar");
+    var ctx= canvas.getContext("2d");
+
+    var posX= event.clientX;
+    var posY= event.clientY;
+    console.log(posX, posY);
+
+    canvas.onmousedown= function(){bandera=true};
+    canvas.onmouseup= function(){bandera=false};
+
+    if(bandera){
+        ctx.fillRect(posX, posY, w=5, h=5);
+        ctx.fill;
+    }
+}
+
+function limpiarCanvas() {
+    var canvas= document.getElementById(elementId="canvasAdibujar");
+    var ctx= canvas.getContext("2d");
+
+    canvas.width= canvas.widt;
 }
